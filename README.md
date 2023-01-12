@@ -1,4 +1,5 @@
 # Overview
+- Team Members: [Me](https://github.com/chewzzz1014), [Dayse](https://github.com/DayseLew), [Sai Hong](https://github.com/Flov9), [Kai Jie](https://github.com/Kaijie0311)
 - This is the group project for the course **CSC3104: Advanced Programming** during semester 3 of CS degree. 
 - Working with my groupmates, we have 'established' a company, **TEdu Solutions** that specialised on providing affordable courses from our online learning platform in collaboration with Universiti Putra Malaysia. (Refer presentation slide for more details)
 - We've devloped the GUI mockup of our website using JavaFX and scenebuilder. Simple functionalities have been added into some website pages.
