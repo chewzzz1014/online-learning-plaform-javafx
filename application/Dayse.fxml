@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+  <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="1920.0" style="-fx-background-color: #002647;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="22.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/assets/icons8-menu-rounded-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="70.0" layoutY="14.0" text="Logo/Website" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1808.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="82.0">
+               <image>
+                  <Image url="@../resources/assets/icons8-search-30.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1854.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="31.0">
+               <image>
+                  <Image url="@../resources/assets/icons8-user-48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    <SplitPane focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <items>
+            <SplitPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="160.0" prefWidth="200.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="306.0" fitWidth="960.0" layoutX="771.0" layoutY="35.0" pickOnBounds="true" AnchorPane.bottomAnchor="600.0" AnchorPane.leftAnchor="771.0">
+                           <image>
+                              <Image url="@../resources/assets/udemy_banner.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dbf4ff" height="200.0" layoutX="1475.0" layoutY="713.0" stroke="BLACK" strokeType="INSIDE" width="230.0">
+                           <effect>
+                              <DropShadow spread="0.38">
+                                 <color>
+                                    <Color opacity="0.5683890581130981" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Rectangle>
+                        <ImageView fitHeight="162.0" fitWidth="151.0" layoutX="1513.0" layoutY="738.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/assets/cyber-security.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dbf4ff" height="200.0" layoutX="1475.0" layoutY="449.0" stroke="BLACK" strokeType="INSIDE" width="230.0">
+                           <effect>
+                              <DropShadow spread="0.38">
+                                 <color>
+                                    <Color opacity="0.5683890581130981" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Rectangle>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dbf4ff" height="200.0" layoutX="1175.0" layoutY="449.0" stroke="BLACK" strokeType="INSIDE" width="230.0">
+                           <effect>
+                              <DropShadow spread="0.38">
+                                 <color>
+                                    <Color opacity="0.5683890581130981" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Rectangle>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dbf4ff" height="200.0" layoutX="1175.0" layoutY="713.0" stroke="BLACK" strokeType="INSIDE" width="230.0">
+                           <effect>
+                              <DropShadow spread="0.38">
+                                 <color>
+                                    <Color opacity="0.5683890581130981" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Rectangle>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dbf4ff" height="200.0" layoutX="875.0" layoutY="449.0" stroke="BLACK" strokeType="INSIDE" width="230.0">
+                           <effect>
+                              <DropShadow spread="0.38">
+                                 <color>
+                                    <Color opacity="0.5683890581130981" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Rectangle>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dbf4ff" height="200.0" layoutX="875.0" layoutY="713.0" stroke="BLACK" strokeType="INSIDE" width="230.0">
+                           <effect>
+                              <DropShadow spread="0.38">
+                                 <color>
+                                    <Color opacity="0.5683890581130981" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Rectangle>
+                        <ImageView fitHeight="150.0" fitWidth="144.0" layoutX="1521.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/assets/cpu.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="155.0" fitWidth="144.0" layoutX="1219.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/assets/algorithm.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="144.0" fitWidth="144.0" layoutX="1217.0" layoutY="732.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/assets/monitor.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="132.0" layoutX="924.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/assets/coding.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="144.0" fitWidth="144.0" layoutX="915.0" layoutY="741.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/assets/devops.png" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="36.0" layoutY="-28.0" prefHeight="953.0" prefWidth="579.0">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cae5ff" height="200.0" layoutX="-2.0" layoutY="-42.0" stroke="WHITE" strokeType="INSIDE" width="579.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cae5ff" height="200.0" layoutX="-3.0" layoutY="722.0" stroke="WHITE" strokeType="INSIDE" width="579.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cae5ff" height="200.0" layoutX="-1.0" layoutY="528.0" stroke="WHITE" strokeType="INSIDE" width="579.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cae5ff" height="200.0" layoutX="-1.0" layoutY="334.0" stroke="WHITE" strokeType="INSIDE" width="579.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cae5ff" height="200.0" layoutX="-1.0" layoutY="141.0" stroke="WHITE" strokeType="INSIDE" width="579.0" />
+                              <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="313.0" layoutY="366.0">
+                                 <image>
+                                    <Image url="@../resources/assets/Screenshot%202022-11-25%20at%208.13.46%20PM.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="115.0" fitWidth="200.0" layoutX="312.0" layoutY="562.0">
+                                 <image>
+                                    <Image url="@../resources/assets/Screenshot%202022-11-25%20at%208.13.22%20PM.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="115.0" fitWidth="200.0" layoutX="312.0" layoutY="183.0">
+                                 <image>
+                                    <Image url="@../resources/assets/Screenshot%202022-11-25%20at%208.12.16%20PM.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="271.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Popular Now !" textAlignment="CENTER" wrappingWidth="255.199951171875">
+                                 <font>
+                                    <Font name="System Bold" size="37.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="119.0" fitWidth="200.0" layoutX="312.0" layoutY="759.0">
+                                 <image>
+                                    <Image url="@../resources/assets/Screenshot%202022-11-25%20at%208.12.25%20PM.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="52.0" fitWidth="42.0" layoutX="233.0" layoutY="58.0">
+                                 <image>
+                                    <Image url="@../resources/assets/fire-vector-icon-png-27.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="87.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Complete JavaScript Course 2022 : From Zero to Expert !" textAlignment="RIGHT" wrappingWidth="200.8880615234375">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="86.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learn Python Now For Absolute Beginner : Begin Your Journey in Code" textAlignment="RIGHT" wrappingWidth="200.8880615234375">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="79.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C++ Programming Full Course 2022 : Recommended for Beginner " textAlignment="RIGHT" wrappingWidth="200.8880615234375">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="81.0" layoutY="776.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Web Development Bootcamp 2022 : Complete Course" textAlignment="RIGHT" wrappingWidth="200.8880615234375">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="24.0" layoutY="269.0" mnemonicParsing="false" text="Add to Cart" />
+                              <Button layoutX="26.0" layoutY="451.0" mnemonicParsing="false" text="Add to Cart" />
+                              <Button layoutX="29.0" layoutY="650.0" mnemonicParsing="false" text="Add to Cart" />
+                              <Button layoutX="32.0" layoutY="851.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="81.0" text="Add to Cart" />
+                              <ImageView fitHeight="23.0" fitWidth="90.0" layoutX="40.0" layoutY="244.0">
+                                 <image>
+                                    <Image url="@../resources/assets/five-stars-quality-icon-isolated-transparent-background-stars-rating-review_97458-424.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="23.0" fitWidth="90.0" layoutX="44.0" layoutY="825.0">
+                                 <image>
+                                    <Image url="@../resources/assets/five-stars-quality-icon-isolated-transparent-background-stars-rating-review_97458-424.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="23.0" fitWidth="90.0" layoutX="40.0" layoutY="623.0">
+                                 <image>
+                                    <Image url="@../resources/assets/five-stars-quality-icon-isolated-transparent-background-stars-rating-review_97458-424.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="23.0" fitWidth="90.0" layoutX="42.0" layoutY="426.0">
+                                 <image>
+                                    <Image url="@../resources/assets/five-stars-quality-icon-isolated-transparent-background-stars-rating-review_97458-424.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="134.0" layoutY="248.0" text="(11,698)" />
+                              <Label layoutX="136.0" layoutY="429.0" text="(8,986)" />
+                              <Label layoutX="135.0" layoutY="626.0" text="(30,802)" />
+                              <Label layoutX="138.0" layoutY="828.0" text="(10,872)" />
+                              <Label layoutX="115.0" layoutY="456.0" text="RM 59.99">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="113.0" layoutY="273.0" text="RM 39.99">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="124.0" layoutY="855.0" text="RM 59.99">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="654.0" text="RM 49.99">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cae5ff" height="200.0" layoutX="-1.0" layoutY="922.0" stroke="WHITE" strokeType="INSIDE" width="579.0" />
+                           </children>
+                        </Pane>
+                        <Text layoutX="1491.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Categories" wrappingWidth="255.199951171875">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </items>
+    </SplitPane>
+  </children>
+</VBox>
