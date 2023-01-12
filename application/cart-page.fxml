@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CartController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="1920.0" style="-fx-background-color: #002647;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="22.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/assets/icons8-menu-rounded-50.png" />
+               </image>
+            </ImageView>
+            <Label graphicTextGap="6.0" layoutX="70.0" layoutY="14.0" onMouseClicked="#goMain" prefHeight="30.0" prefWidth="173.0" text="TEdu Solutions" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/assets/company-logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Button layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goDashboard" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent; -fx-text-fill: transparent; fx-border-fill: transparent;" AnchorPane.rightAnchor="37.0">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/assets/icons8-user-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="1024.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goDashboard" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent; -fx-text-fill: transparent; fx-border-fill: transparent;" AnchorPane.rightAnchor="89.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/assets/icons8-search-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="1138.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goCart" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent; -fx-text-fill: transparent; fx-border-fill: transparent;" AnchorPane.rightAnchor="142.0">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/assets/icons8-shopping-cart-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="2.0" />
+         </padding>
+      </AnchorPane>
+      <SplitPane dividerPositions="0.7651376146788991" orientation="VERTICAL" prefHeight="881.0" prefWidth="1484.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="385.0" prefWidth="1318.0" style="-fx-border-color: black;">
+               <children>
+                  <Label layoutX="206.0" layoutY="50.0" prefHeight="56.0" prefWidth="105.0" text="Cart" AnchorPane.bottomAnchor="580.0">
+                     <font>
+                        <Font name="System Bold Italic" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1060.0" layoutY="29.0" text="Price" AnchorPane.bottomAnchor="583.0">
+                     <font>
+                        <Font name="System Bold Italic" size="40.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="mainCheck" layoutX="115.0" layoutY="46.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="30.0" selected="true" AnchorPane.bottomAnchor="586.0" AnchorPane.leftAnchor="114.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </CheckBox>
+                  <HBox layoutX="206.0" layoutY="140.0" prefHeight="186.0" prefWidth="606.0" style="-fx-border-color: black;">
+                     <children>
+                        <Pane prefHeight="185.0" prefWidth="684.0">
+                           <children>
+                              <ImageView fitHeight="132.0" fitWidth="228.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/assets/javapic.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="250.0" layoutY="28.0" prefHeight="36.0" prefWidth="324.0" text="Java Programming for Beginners">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="250.0" layoutY="64.0" prefHeight="30.0" prefWidth="148.0" text="Daniel Liang" textFill="#0000006c">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="266.0" layoutY="107.0" prefHeight="36.0" prefWidth="73.0" text="4.5">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/assets/icons8-rating-circled-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="353.0" layoutY="107.0" prefHeight="33.0" prefWidth="104.0" text="10,559">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/assets/icons8-user-groups-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="206.0" layoutY="413.0" prefHeight="186.0" prefWidth="606.0" style="-fx-border-color: black;">
+                     <children>
+                        <Pane prefHeight="185.0" prefWidth="606.0">
+                           <children>
+                              <ImageView fitHeight="121.0" fitWidth="228.0" layoutX="14.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/assets/editedddd.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="242.0" layoutY="33.0" text=" Python Programming for Beginners">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="248.0" layoutY="63.0" prefHeight="30.0" prefWidth="134.0" text="Liang Daniel" textFill="#0000006b">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="266.0" layoutY="107.0" prefHeight="36.0" prefWidth="73.0" text="4.1">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/assets/icons8-rating-circled-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="353.0" layoutY="107.0" prefHeight="33.0" prefWidth="104.0" text="7,679">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/assets/icons8-user-groups-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <CheckBox fx:id="firstCheck" layoutX="114.0" layoutY="215.0" mnemonicParsing="false" selected="true" AnchorPane.leftAnchor="113.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="secondCheck" layoutX="121.0" layoutY="488.0" mnemonicParsing="false" selected="true" AnchorPane.bottomAnchor="157.60000000000002" AnchorPane.leftAnchor="113.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </CheckBox>
+                  <TextField fx:id="tfFirst" editable="false" layoutX="1026.0" layoutY="195.0" prefHeight="75.0" prefWidth="203.0" text="RM 35.00">
+                     <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                     </font>
+
+                  </TextField>
+                  <TextField fx:id="tfSecond" editable="false" layoutX="1026.0" layoutY="468.0" prefHeight="75.0" prefWidth="203.0" text="RM 30.00">
+                     <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                     </font>
+                  </TextField>
+               </children></AnchorPane>
+          <AnchorPane maxHeight="180.0" prefHeight="225.0" prefWidth="1318.0" style="-fx-border-color: black;">
+               <children>
+                  <Label layoutX="868.0" layoutY="28.0" prefHeight="40.0" prefWidth="94.0" text="Total">
+                     <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfTotal" editable="false" layoutX="1027.0" layoutY="16.0" prefHeight="75.0" prefWidth="203.0" text="RM 65.00">
+                     <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="50.0" layoutY="147.0" text="Payment Method">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="99.0" text="Promo Code">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="1177.0" layoutY="143.0" mnemonicParsing="false" text="Pay Now">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <TextField layoutX="275.0" layoutY="102.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <ChoiceBox fx:id="myChoiceBox" layoutX="274.0" layoutY="149.0" prefHeight="30.0" prefWidth="174.0" />
+               </children></AnchorPane>
+        </items>
+         <VBox.margin>
+            <Insets bottom="50.0" left="300.0" right="300.0" top="50.0" />
+         </VBox.margin>
+      </SplitPane>
+   </children>
+</VBox>
